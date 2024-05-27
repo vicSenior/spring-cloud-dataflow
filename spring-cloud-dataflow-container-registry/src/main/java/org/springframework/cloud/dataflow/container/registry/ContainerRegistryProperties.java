@@ -30,6 +30,9 @@ import org.springframework.util.StringUtils;
 public class ContainerRegistryProperties {
 
 	public static final String CONTAINER_IMAGE_METADATA_PREFIX = "spring.cloud.dataflow.container";
+	public static final String GENERIC_JSON_APPLICATION = "application/json";
+	public static final String CUSTOM_IMAGE_MANIFEST_MEDIA_TYPE = "application/vnd.custom.test1.manifest.v2+json";
+	public static final String FUTURE_IMAGE_MANIFEST_MEDIA_TYPE = "application/vnd.future.img.manifest.v2+json";
 	public static final String OCI_IMAGE_MANIFEST_MEDIA_TYPE = "application/vnd.oci.image.manifest.v1+json";
 	public static final String DOCKER_IMAGE_MANIFEST_MEDIA_TYPE = "application/vnd.docker.distribution.manifest.v2+json";
 	public static final String DOCKER_HUB_HOST = "registry-1.docker.io";
