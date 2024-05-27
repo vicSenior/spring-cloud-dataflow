@@ -111,7 +111,7 @@ public class ContainerRegistryConfiguration {
 	private AuthorizationType authorizationType;
 
 	/**
-	 * Image Manifest media type. Docker and OCI are supported.
+	 * Image Manifest media type. Docker and OCI mediaType are supported (but use Docker standard).
 	 */
 	private String manifestMediaType = ContainerRegistryProperties.DOCKER_IMAGE_MANIFEST_MEDIA_TYPE;
 
