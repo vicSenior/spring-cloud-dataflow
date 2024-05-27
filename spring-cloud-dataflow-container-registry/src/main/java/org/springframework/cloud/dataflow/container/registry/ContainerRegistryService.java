@@ -46,8 +46,14 @@ public class ContainerRegistryService {
 	private static final Logger logger = LoggerFactory.getLogger(ContainerRegistryService.class);
 
 	private static final List<String> SUPPORTED_MANIFEST_MEDIA_TYPES =
-			Collections.unmodifiableList(Arrays.asList(ContainerRegistryProperties.OCI_IMAGE_MANIFEST_MEDIA_TYPE,
-					ContainerRegistryProperties.DOCKER_IMAGE_MANIFEST_MEDIA_TYPE));
+	Collections.unmodifiableList(
+		Arrays.asList(
+			ContainerRegistryProperties.CUSTOM_IMAGE_MANIFEST_MEDIA_TYPE,
+			ContainerRegistryProperties.FUTURE_IMAGE_MANIFEST_MEDIA_TYPE,
+			ContainerRegistryProperties.DOCKER_IMAGE_MANIFEST_MEDIA_TYPE,
+			ContainerRegistryProperties.OCI_IMAGE_MANIFEST_MEDIA_TYPE
+		)
+	);
 
 	private static final String HTTPS_SCHEME = "https";
 
